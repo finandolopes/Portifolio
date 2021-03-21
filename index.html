@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fernando Lopes</title>
+
+    <meta charset='utf-8' />
+    <meta name="author" content="Jonathan Mendes" />
+
+    <meta http-equiv="content-language" content="pt-br" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+
+    <!-- Lib CSS -->
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- CSS Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- JS Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- stats.js -->
+    <script src="js/lib/stats.js"></script>
+
+    <link rel="shortcut icon" href="/img/logo.png" />
+</head>
+
+<body>
+    <!-- =================== Menu =================== -->
+
+    <header>
+        <div id='menu'>
+            <nav class="navbar navbar-expand-lg main-nav d-none d-lg-block fixed-top bgMyBlack" id="header">
+                <div class="container justify-content-flex-end">
+                    <div>
+                        <ul id="lista" class="navbar-nav ml-auto">
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="#home" onclick="topFunction()">
+                                    <i class="fa fa-home mx-3 hide"></i>Inicio</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="#about">
+                                    <i class="fa fa-question-circle mx-3 hide"></i>Sobre</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="#skils">
+                                    <i class="fa fa-book mx-3 hide"></i>Habilidades</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="#contact">
+                                    <i class="fa fa-phone mx-3 hide"></i>Contato</a>
+                            </li>
+                        </ul>
+                        <img id="imgLogo" src="img/logo.png" class="hide" alt="Logo" width="250px" height="250px">
+                        <h4 id="subtitleLogo" class="hide w-100">Fernando Lopes</h4>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- <div class="alert alert-warning fixed-bottom text-center" role="alert">
+        Site em Construção
+    </div> -->
+
+    <div class="container">
+        <section id="home">
+            <div class="row fontAudiowide text-center">
+                <div class="col-12">
+                    <div class="mx-auto myBorderYellow p-3" style="width:300px;height:300px;">
+                        <img class="full img-fluid" src="img/foto-perfil.jpg" class="mx-auto" width="300px"
+                            height="300px">
+                    </div>
+                </div>
+
+                <div class="col-12 text-center mt-4">
+                    <h1 class="text-white title">Fernando Lopes</h1>
+                </div>
+
+                <div class="col-12">
+                    <h2 class="subtitle">Desenvolvedor <br> Web / FullStack / C#</h2>
+                </div>
+
+                <!--<div class="col-12">-->
+                <!--    <h2 class="subtitle">Front-End</h2>-->
+                <!--</div>-->
+
+                <div class="col-12 mt-4">
+                    <a href="https://github.com/finandolopes" target="_blank" class="mr-4">
+                        <button class="btn btn-outline-warning myBorderYellow myBtnColor rounded-circle myRedesSociais">
+                            <i class="fab fa-github-alt"></i>
+                        </button>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/fernando-lopes-ba1262a5/" target="_blank">
+                        <button class="btn btn-outline-warning myBorderYellow myBtnColor rounded-circle myRedesSociais">
+                            <i class="fab fa-linkedin-in"></i>
+                        </button>
+                    </a>
+
+                    <a href="https://www.behance.net/fernandolopes25" target="_blank" class="ml-4">
+                        <button class="btn btn-outline-warning myBorderYellow myBtnColor rounded-circle myRedesSociais">
+                            <i class="fab fa-behance"></i>
+                        </button>
+                    </a>
+
+                    <!-- <a href="https://www.facebook.com/finando.lopez" target="_blank" class="ml-4">
+                        <button class="btn btn-outline-warning myBorderYellow myBtnColor rounded-circle myRedesSociais">
+                            <i class="fab fa-facebook-f"></i>
+                        </button>
+                    </a> -->
+                </div>
+            </div>
+        </section>
+
+        <button class="rounded-circle" onclick="topFunction()" id="myBtn" title="Go to top">
+            <i class="fas fa-arrow-alt-circle-up"></i>
+        </button>
+
+        <section id="about">
+            <div class="row fontAudiowide mt-3">
+                <div class="col-12">
+                    <div class="separator my-5 mx-auto"></div>
+                    <h2 class="my-2">Sobre mim</h2>
+                    <p class="text-white fontShareTechMono text-justify aboutMe">
+                        Sou, Bacharel em Direito, Desenvolvedor, FullStack, Javascript, C# <a
+                            href="https://www.uhttps://uniesp.edu.br/sites/suzano/curso.php?id_curso=80" target="_blank"><span
+                                class="mySpanColor spanContact">Faculdade Unida de Suzano - UNISUZ</span></a>.
+                        Atualmente estou desempregado, trabalhei recentemente como Líder de TI em uma empresa do ramo de clínicas médicas, efetuo matutenção em notebooks, computadores, 
+						recuperacao de dados, desenvolvimento de sites e sistemas de gerenciamento comerciais, como pode conferir alguns projetos abaixo.
+                        Gosto muito da área de mobile também e UX/UI, busco sempre aprender novas tecnologias, ganhando
+                        conhecimentos gradativamente com novos projetos.
+                    </p>
+                    <div class="d-flex justify-content-center">
+                        <a href="./Fernando_Lopes_Curriculo.pdf">
+                            <button class="btn btn-outline-warning myBorderYellow myBtnColor mt-4">
+                                Currículo
+                                <i class="fa fa-chevron-down ml-2"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skils">
+            <div class="row fontAudiowide">
+                <div class="col-12">
+
+                    <div class="separator my-5 mx-auto"></div>
+                    <h2 class="mb-5 text-center">Habilidades</h2>
+
+                    <h4 class="text-white text-center">Web</h4>
+                    <div class="row text-center">
+                        <div class="col-sm-12 col-md-3 col-lg-3">
+                            <div class="blockHabilidades myBorderYellow bgMyBlack2 p-3
+                                    d-flex align-items-center justify-content-center
+                                    mx-auto my-4 boxShadow">
+                                <div class="w-100">
+                                    <img src="img/icones/reactjs.png" alt="React JS" width="50px" height="50px">
+                                    <h4 class="text-white my-2">React JS</h4>
+                                    <div class="progress myProgressBar">
+                                        <div class="progress-bar bgMyYellow3" role="progressbar" style="width: 70%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-3 col-lg-3">
+                            <div class="blockHabilidades myBorderYellow bgMyBlack2 p-3
+                                    d-flex align-items-center justify-content-center
+                                    mx-auto my-4 boxShadow">
+                                <div class="w-100">
+                                    <img src="img/icones/angular.png" alt="React JS" width="50px" height="50px">
+                                    <h4 class="text-white my-2">Angular</h4>
+                                    <div class="progress myProgressBar">
+                                        <div class="progress-bar bgMyYellow3" role="progressbar" style="width: 40%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-3 col-lg-3">
+                            <div class="blockHabilidades myBorderYellow bgMyBlack2 p-3
+                                                    d-flex align-items-center justify-content-center
+                                                    mx-auto my-4 boxShadow">
+                                <div class="w-100">
+                                    <img src="img/icones/jquery.png" alt="React JS" width="50px" height="50px">
+                                    <h4 class="text-white my-2">jQuery</h4>
+                                    <div class="progress myProgressBar">
+                                        <div class="progress-bar bgMyYellow3" role="progressbar" style="width: 20%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-3 col-lg-3">
+                            <div class="blockHabilidades myBorderYellow bgMyBlack2 p-3
+                            d-flex align-items-center justify-content-center
+                            mx-auto my-4 boxShadow">
+                                <div class="w-100">
+                                    <img src="img/icones/bootstrap.png" alt="React JS" width="50px" height="50px">
+                                    <h4 class="text-white my-2">Bootstrap</h4>
+                                    <div class="progress myProgressBar">
+                                        <div class="progress-bar bgMyYellow3" role="progressbar" style="width: 70%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row text-center">
+                        <div class="col-sm-12 col-md-3 col-lg-3">
+                            <div class="blockHabilidades myBorderYellow bgMyBlack2 p-3
+                                        d-flex align-items-center justify-content-center
+                                        mx-auto my-4 boxShadow">
+                                <div class="w-100">
+                                    <img src="img/icones/html5.png" alt="React JS" width="50px" height="50px">
+                                    <h4 class="text-white my-2">HTML</h4>
+                                    <div class="progress myProgressBar">
+                                        <div class="progress-bar bgMyYellow3" role="progressbar" style="width: 90%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-sm-12 col-md-3 col-lg-3">
+                            <div class="blockHabilidades myBorderYellow bgMyBlack2 p-3
+                                        d-flex align-items-center justify-content-center
+                                        mx-auto my-4 boxShadow">
+                                <div class="w-100">
+                                    <img src="img/icones/css3.png" alt="React JS" width="50px" height="50px">
+                                    <h4 class="text-white my-2">CSS</h4>
+                                    <div class="progress myProgressBar">
+                                        <div class="progress-bar bgMyYellow3" role="progressbar" style="width: 70%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-3 col-lg-3">
+                            <div class="blockHabilidades myBorderYellow bgMyBlack2 p-3
+                                        d-flex align-items-center justify-content-center
+                                        mx-auto my-4 boxShadow">
+                                <div class="w-100">
+                                    <img src="img/icones/javaScript.png" alt="React JS" width="50px" height="50px">
+                                    <h4 class="text-white my-2">JavaScript</h4>
+                                    <div class="progress myProgressBar">
+                                        <div class="progress-bar bgMyYellow3" role="progressbar" style="width: 80%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-sm-12 col-md-3 col-lg-3">
+                            <div class="blockHabilidades myBorderYellow bgMyBlack2 p-3
+                                    d-flex align-items-center justify-content-center
+                                    mx-auto my-4 boxShadow">
+                                <div class="w-100">
+                                    <img src="img/icones/redux.png" alt="React JS" width="50px" height="50px">
+                                    <h4 class="text-white my-2">Redux</h4>
+                                    <div class="progress myProgressBar">
+                                        <div class="progress-bar bgMyYellow3" role="progressbar" style="width: 20%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="separator my-5 mx-auto"></div>
+
+                    <h4 class="text-white text-center">Banco de Dados</h4>
+                    <div class="row text-center">
+                        <div class="col-sm-12 col-md-4 col-lg-4">
+                            <div class="blockHabilidades myBorderYellow bgMyBlack2 p-3
+                                    d-flex align-items-center justify-content-center
+                                    mx-auto my-4 boxShadow">
+                                <div class="w-100">
+                                    <img src="img/icones/firebase.png" alt="React JS" width="50px" height="50px">
+                                    <h4 class="text-white my-2">Firebase</h4>
+                                    <div class="progress myProgressBar">
+                                        <div class="progress-bar bgMyYellow3" role="progressbar" style="width: 80%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-4 col-lg-4">
+                            <div class="blockHabilidades myBorderYellow bgMyBlack2 p-3
+                                    d-flex align-items-center justify-content-center
+                                    mx-auto my-4 boxShadow">
+                                <div class="w-100">
+                                    <img src="img/icones/postgree.png" alt="React JS" width="50px" height="50px">
+                                    <h4 class="text-white my-2" style="font-size: 23px;">PostgreeSQL</h4>
+                                    <div class="progress myProgressBar">
+                                        <div class="progress-bar bgMyYellow3" role="progressbar" style="width: 60%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-4 col-lg-4">
+                            <div class="blockHabilidades myBorderYellow bgMyBlack2 p-3
+                                        d-flex align-items-center justify-content-center
+                                        mx-auto my-4 boxShadow">
+                                <div class="w-100">
+                                    <img src="img/icones/firebird.png" alt="React JS" width="50px" height="50px">
+                                    <h4 class="text-white my-2">Firebird</h4>
+                                    <div class="progress myProgressBar">
+                                        <div class="progress-bar bgMyYellow3" role="progressbar" style="width: 30%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="separator my-5 mx-auto"></div>
+
+                    <h4 class="text-white text-center w-100">Mobile</h4>
+                    <div class="row text-center">
+                        <div class="col-sm-12 col-md-4 col-lg-4">
+                            <div class="blockHabilidades myBorderYellow bgMyBlack2 p-3
+                                        d-flex align-items-center justify-content-center
+                                        mx-auto my-4 boxShadow">
+                                <div class="w-100">
+                                    <img src="img/icones/reactjs.png" alt="React JS" width="70px" height="70px">
+                                    <h4 class="text-white my-2 smFont">React Native</h4>
+                                    <div class="progress myProgressBar">
+                                        <div class="progress-bar bgMyYellow3" role="progressbar" style="width: 40%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-4 col-lg-4">
+                            <div class="blockHabilidades myBorderYellow bgMyBlack2 p-3
+                                        d-flex align-items-center justify-content-center
+                                        mx-auto my-4 boxShadow">
+                                <div class="w-100">
+                                    <img src="img/icones/ionic.png" alt="React JS" width="50px" height="50px">
+                                    <h4 class="text-white my-2">Ionic</h4>
+                                    <div class="progress myProgressBar">
+                                        <div class="progress-bar bgMyYellow3" role="progressbar" style="width: 70%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-4 col-lg-4">
+                            <div class="blockHabilidades myBorderYellow bgMyBlack2 p-3
+                                        d-flex align-items-center justify-content-center
+                                        mx-auto my-4 boxShadow">
+                                <div class="w-100">
+                                    <img src="img/icones/androidstudio.png" alt="React JS" width="50px" height="50px">
+                                    <h4 class="text-white my-2 smFont">Android Studio</h4>
+                                    <div class="progress myProgressBar">
+                                        <div class="progress-bar bgMyYellow3" role="progressbar" style="width: 40%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="separator my-5 mx-auto"></div>
+                    <div class="row text-center">
+                        <h4 class="text-white text-center w-100">Outros</h4>
+
+                        <div class="col-sm-12 col-md-3 col-lg-3">
+                            <div class="blockHabilidades myBorderYellow bgMyBlack2 p-3
+                                        d-flex align-items-center justify-content-center
+                                        mx-auto my-4 boxShadow">
+                                <div class="w-100">
+                                    <img src="img/icones/java.png" alt="React JS" width="70px" height="70px">
+                                    <h4 class="text-white my-2">Java</h4>
+                                    <div class="progress myProgressBar">
+                                        <div class="progress-bar bgMyYellow3" role="progressbar" style="width: 40%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-3 col-lg-3">
+                            <div class="blockHabilidades myBorderYellow bgMyBlack2 p-3
+                                        d-flex align-items-center justify-content-center
+                                        mx-auto my-4 boxShadow">
+                                <div class="w-100">
+                                    <img src="img/icones/c.png" alt="React JS" width="50px" height="50px">
+                                    <h4 class="text-white my-2">C</h4>
+                                    <div class="progress myProgressBar">
+                                        <div class="progress-bar bgMyYellow3" role="progressbar" style="width: 85%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-3 col-lg-3">
+                            <div class="blockHabilidades myBorderYellow bgMyBlack2 p-3
+                                        d-flex align-items-center justify-content-center
+                                        mx-auto my-4 boxShadow">
+                                <div class="w-100">
+                                    <img src="img/icones/python.png" alt="React JS" width="50px" height="50px">
+                                    <h4 class="text-white my-2">Python</h4>
+                                    <div class="progress myProgressBar">
+                                        <div class="progress-bar bgMyYellow3" role="progressbar" style="width: 20%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-3 col-lg-3">
+                            <div class="blockHabilidades myBorderYellow bgMyBlack2 p-3
+                                        d-flex align-items-center justify-content-center
+                                        mx-auto my-4 boxShadow">
+                                <div class="w-100">
+                                    <img src="img/icones/linux.png" alt="React JS" width="50px" height="50px">
+                                    <h4 class="text-white my-2">Linux</h4>
+                                    <div class="progress myProgressBar">
+                                        <div class="progress-bar bgMyYellow3" role="progressbar" style="width: 65%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+
+        <div class="separator my-5 mx-auto"></div>
+
+        <section class="formation">
+            <div class="row fontAudiowide">
+                <div class="col-12 text-center">
+                    <h2>Formação</h2>
+                </div>
+
+                <div class="col-md-12 d-flex justify-content-center mt-5">
+                    <div id="formacao" class="myBorderYellow p-2 boxShadow">
+                        <div class="bgMyBlack2 p-3 text-white fontShareTechMono">
+                            <span class="mySpanColor">UNISUZ</span> - Faculdade Unida de Suzano <br>
+                            Bacharelado Direito<br><br>
+                            <span class="mySpanColor">2015</span> - <span class="mySpanColor">2020</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="separator my-5 mx-auto"></div>
+
+        <div class="row fontAudiowide">
+            <div class="col-12 text-center">
+                <h2>Projetos</h2>
+            </div>
+            <!-- <div class="col-sm-12 col-md-4 col-lg-4 mt-5 mb-3 d-flex justify-content-center">
+                <div class="card bgMyBlack2 myBorderYellow boxShadow" style="width: 18rem;">
+                    <img src="img/fotos/superevents.jpg" class="card-img-top imgCard cardImgSize" alt="Super Events">
+                    <div class="card-body text-white fontShareTechMono">
+                        <h5 class="card-title mySpanColor">Super Events</h5>
+                        <p class="card-text">
+                            Um portal de divulgação de eventos,
+                            desenvolvido em <span class="mySpanColor">React JS</span> +
+                            <span class="mySpanColor">Firebase</span>, para
+                            feira de projetos da UNIVÁS.
+                        </p>
+                        <a href="https://github.com/finandolopes?tab=repositories" target="_blank">
+                            <button class="btn btn-outline-warning myBorderYellow myBtnColor mt-4">
+                                Ir para o Site
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="col-sm-12 col-md-4 col-lg-4 mt-5 mb-3 d-flex justify-content-center">
+            <div class="card bgMyBlack2 myBorderYellow boxShadow" style="width: 18rem;">
+                <img src="img/fotos/Clinica.png" class="card-img-top imgCard cardImgSize" alt="Super Events">
+                <div class="card-body text-white fontShareTechMono">
+                    <h5 class="card-title mySpanColor">Sistema Web para Clínicas</h5>
+                    <p class="card-text">
+                        Um sistema web para gestão de clínicas Online,
+                        desenvolvido em <span class="mySpanColor">Javascript / CSharp</span> +
+                        <span class="mySpanColor">MsQL</span>.
+                    </p>
+                    <a href="https://github.com/finandolopes/Clinicas" target="_blank">
+                        <button class="btn btn-outline-warning myBorderYellow myBtnColor mt-4">
+                            Ir para o Site
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4 col-lg-4 mt-5 mb-3 d-flex justify-content-center">
+            <div class="card bgMyBlack2 myBorderYellow boxShadow" style="width: 18rem;">
+                <img src="img/fotos/sistemaerp.JPG" class="card-img-top cardImgSize" alt="Super Events">
+                <div class="card-body text-white fontShareTechMono">
+                    <h5 class="card-title mySpanColor">Gestão ERp</h5>
+                    <p class="card-text">
+                        <span class="mySpanColor">loja Online com PDV</span> é um projeto Freelancer, com foco
+                        em desenvolvimento <span class="mySpanColor">Web</span> e <span
+                            class="mySpanColor">Mobile</span>.
+                    </p>
+                    <a href="https://github.com/finandolopes/Sistema-erp-loja-online" target="_blank">
+                        <button class="btn btn-outline-warning myBorderYellow myBtnColor mt-4">
+                            Ir para o Site
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4 col-lg-4 mt-5 mb-3 d-flex justify-content-center">
+            <div class="card bgMyBlack2 myBorderYellow boxShadow" style="width: 18rem;">
+                <img src="img/fotos/instagram.png" class="card-img-top cardImgSize" alt="Super Events">
+                <div class="card-body text-white fontShareTechMono">
+                    <h5 class="card-title mySpanColor">Clone Instagram</h5>
+                    <p class="card-text">
+                        Um aplicativo desenvolvido em <span class="mySpanColor">CSS/HTML</span> + <span
+                            class="mySpanColor"></span>
+                        para com parte do Curso da Digital Innovation One.
+                    </p>
+                    <a href="./fabric_design.apk" target="_blank">
+                        <button class="btn btn-outline-warning myBorderYellow myBtnColor mt-4">
+                            Download do APK
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="separator my-5 mx-auto"></div>
+    <section id="contact">
+        <div class="row fontShareTechMono">
+            <div class="col-12 text-center mb-5">
+                <h2>Contato</h2>
+            </div>
+
+            <div class="col-sm-12 col-md-4 col-lg-4 my-4">
+                <div class="myBorderYellow boxShadow">
+                    <div
+                        class="contact text-white text-center d-flex align-items-center justify-content-center mx-auto">
+                        <div class="w-100">
+                            <div class=" mb-5">
+                                <i class="fas fa-map-marked-alt iconContact"></i>
+                            </div>
+                            <div class="mt-5">
+                                <span class="mySpanColor spanContact">Poá - SP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-4 col-lg-4 my-4">
+                <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5511992043469" target="_blank">
+                    <div id="blockWhatsApp" class="myBorderYellow boxShadow">
+                        <div
+                            class="contact text-white text-center d-flex align-items-center justify-content-center mx-auto">
+                            <div class="w-100 blockPhone">
+                                <div class="mb-5">
+                                    <i class="fas fa-phone iconContact"></i>
+                                </div>
+                                <div>
+                                    <span class="mySpanColor spanContact">(11) 9 9204-3469</span>
+                                </div>
+                            </div>
+                            <i class="fab fa-whatsapp iconContact whatsApp iconWhatsApp"></i>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="col-sm-12 col-md-4 col-lg-4 my-4">
+                <div class="myBorderYellow boxShadow">
+                    <div
+                        class="contact text-white text-center d-flex align-items-center justify-content-center mx-auto">
+                        <div class="w-100">
+                            <div class="mb-5">
+                                <i class="fas fa-at iconContact"></i>
+                            </div>
+                            <div class="mt-5">
+                                <span class="mySpanColor spanContact">fnando0506@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    <footer class="vw-100 d-flex align-items-center justify-content-center mx-auto">
+        <div class="text-center">
+            Fernando Lopes © Copyright 2021
+        </div>
+        <div>
+
+        </div>
+    </footer>
+
+    <script src="lib/mobile-nav/mobile-nav.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
